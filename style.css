@@ -1,0 +1,94 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* /Custom */
+
+#airplane {
+  position: absolute;
+  right: 25%;
+  bottom: 70%;
+  width: 200px;
+  height: 200px;
+  background-color: white
+  /* border-radius: 21px; */
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+#bulb {
+  position: absolute;
+  right: 35%;
+  bottom: 150%;
+  width: 20px;
+  height: 5px;
+  background-color: white
+  /* border-radius: 21px; */
+  -webkit-transform: rotate(10deg);
+  transform: rotate(0deg);
+}
+
+#stroke {
+  position: absolute;
+  left: 5%;
+  bottom: 130%;
+  width: 0px;
+  height: 0px;
+  size: 20px;
+  background-color: white
+  /* border-radius: 21px; */
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+#bio {
+  color: black;
+  position: center; 
+}
+
+#photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+ul.a {
+  list-style-type: circle;
+} 
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
